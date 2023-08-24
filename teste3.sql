@@ -32,10 +32,11 @@ insert into curso values
 ('10', 'youtuber', 'gerar polemica e ganhar inscritos', '5', '2', '2018');
 
 update curso  -- alteração dos dados
-set nome = 'java', ano = '2015', carga = '40'
-where idcurso = '5'
+set ano = '2018', carga = '0'
+where ano = '2050'
 limit 1; -- limit serve para limitar quantas linhas devem ser afetadas
 
-
+delete from curso
+where idcurso = '10';
 
 select * from curso;
