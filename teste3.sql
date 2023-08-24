@@ -36,7 +36,6 @@ set ano = '2018', carga = '0'
 where ano = '2050'
 limit 1; -- limit serve para limitar quantas linhas devem ser afetadas
 
-delete from curso
-where idcurso = '10';
+truncate table curso; -- apaga todos os registros da tabela
 
 select * from curso;
