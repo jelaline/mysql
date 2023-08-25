@@ -21,5 +21,9 @@ change column idade ida int;
 alter table sistemas
 rename to parametros;
 
+-- selecionando apenas algumas preferencias da tabela
+SELECT Id, Nome, Email
+  WHERE Id < 4 AND Nome LIKE '%S%'
+  ORDER BY Nome DESC;
 
 select * from sistemas;
