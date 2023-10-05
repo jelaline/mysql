@@ -31,7 +31,7 @@ INSERT INTO Comentarios (ComentarioID, ProdutoID, Autor, TextoComentario, DataCo
 (4, 4, 'Manu', 'preço mais caro de relogio', '2023-10-08'),
 (5, 2, 'Henrique', 'promo da camisa do tricolor', '2023-10-09');
 
-SELECT p.ProdutoID, p.NomeProduto, COUNT(c.ComentarioID) AS NumeroComentarios
-FROM Produtos p
-LEFT JOIN Comentarios c ON p.ProdutoID = c.ProdutoID
-GROUP BY p.ProdutoID, p.NomeProduto;
+SELECT pr.ProdutoID, pr.NomeProduto, COUNT(c.ComentarioID) AS NumeroComentarios
+FROM Produtos pr
+LEFT JOIN Comentarios c ON pr.ProdutoID = c.ProdutoID
+GROUP BY pr.ProdutoID, pr.NomeProduto;
